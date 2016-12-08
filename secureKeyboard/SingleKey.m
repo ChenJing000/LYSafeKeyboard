@@ -1,23 +1,24 @@
 //
-//  LYKey.m
-//  LYSafeKeyboard
+//  SingleKey.m
+//  SecureKeyboard
 //
 //  Created by Mr Li on 16/10/21.
-//  Copyright © 2016年 Mr_Li. All rights reserved.
+//  Modified by Jing on 16/10/08.
 //
 
-#import "LYKey.h"
+#import "SingleKey.h"
 
-@interface LYKey ()
+@interface SingleKey ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titileLab;
 
 @end
 
-@implementation LYKey
+@implementation SingleKey
 
 - (void)awakeFromNib {
 
+    [super awakeFromNib]; 
     self.layer.borderWidth = 0.5;
     self.layer.borderColor = [UIColor colorWithRed:0xe6 green:0xe6 blue:0xe6 alpha:1].CGColor;
 }

@@ -1,32 +1,33 @@
 //
-//  LYSafeKeyBoardView.m
-//  LYSafeKeyboard
+//  SecureKeyboardView.m
+//  SecureKeyboard
 //
 //  Created by Mr Li on 16/10/20.
+//  Modified by Jing on 16/12/08
 //  Copyright © 2016年 Mr_Li. All rights reserved.
 //
 
-#import "LYSafeKeyBoardView.h"
-#import "LYKey.h"
+#import "SecureKeyboardView.h"
+#import "SingleKey.h"
 //屏幕宽度
 #define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
 //屏幕高度
 #define SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
-//键盘的高度（我确认了自带的数字键盘高度  只有6sp的键盘高度为226 其他为216）
+//键盘的高度（确认了自带的数字键盘高度  只有6sp的键盘高度为226 其他为216）
 #define KEYBOARD_HEIGHT     (SCREEN_WIDTH == 736 ? 226 : 216)
 //键的高度
 #define KEY_HEIGHT          KEYBOARD_HEIGHT / 4.0f
 //键的宽度
 #define KEY_WIDTH           SCREEN_WIDTH / 3.0f
 
-@interface LYSafeKeyBoardView ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface SecureKeyboardView ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) UICollectionView        * collectionView;
 @property (nonatomic, strong) NSMutableArray          * dataArr;
 
 @end
 
-@implementation LYSafeKeyBoardView
+@implementation SecureKeyboardView
 
 - (instancetype)init{
     
@@ -38,13 +39,13 @@
 }
 
 #pragma mark - 单例
-+ (LYSafeKeyBoardView *)shareKeyBoard{
++ (SecureKeyboardView *)shareKeyBoard{
     
-    static LYSafeKeyBoardView * keyBoard = nil;
+    static SecureKeyboardView * keyBoard = nil;
     static dispatch_once_t pre;
     dispatch_once(&pre, ^{
         
-        keyBoard = [[LYSafeKeyBoardView alloc]init];
+        keyBoard = [[SecureKeyboardView alloc]init];
         
     });
     return keyBoard;
@@ -68,7 +69,7 @@
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         
-        [_collectionView registerNib:[UINib nibWithNibName:@"LYKey" bundle:nil] forCellWithReuseIdentifier:@"LYKey"];
+        [_collectionView registerNib:[UINib nibWithNibName:@"SingleKey" bundle:nil] forCellWithReuseIdentifier:@"SingleKey"];
     }
     return _collectionView;
 }
@@ -102,7 +103,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    LYKey * key = [collectionView dequeueReusableCellWithReuseIdentifier:@"LYKey" forIndexPath:indexPath];
+    SingleKey * key = [collectionView dequeueReusableCellWithReuseIdentifier:@"SingleKey" forIndexPath:indexPath];
     
     if (self.dataArr.count > 0) {
         

@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19C996241DF92AF8009C20D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C996231DF92AF8009C20D9 /* Foundation.framework */; };
+		19C996461DF969C7009C20D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C996341DF969C7009C20D9 /* AppDelegate.m */; };
+		19C996471DF969C7009C20D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C996351DF969C7009C20D9 /* Assets.xcassets */; };
+		19C996481DF969C7009C20D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C996371DF969C7009C20D9 /* LaunchScreen.storyboard */; };
+		19C996491DF969C7009C20D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19C996391DF969C7009C20D9 /* Main.storyboard */; };
+		19C9964A1DF969C7009C20D9 /* DELETE.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C9963B1DF969C7009C20D9 /* DELETE.png */; };
+		19C9964B1DF969C7009C20D9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19C9963C1DF969C7009C20D9 /* Info.plist */; };
+		19C9964C1DF969C7009C20D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C9963D1DF969C7009C20D9 /* main.m */; };
+		19C9964D1DF969C7009C20D9 /* SecureKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C9963F1DF969C7009C20D9 /* SecureKeyBoardView.m */; };
+		19C9964E1DF969C7009C20D9 /* SingleKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C996411DF969C7009C20D9 /* SingleKey.m */; };
+		19C9964F1DF969C7009C20D9 /* SingleKey.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19C996421DF969C7009C20D9 /* SingleKey.xib */; };
+		19C996501DF969C7009C20D9 /* SPACE.png in Resources */ = {isa = PBXBuildFile; fileRef = 19C996431DF969C7009C20D9 /* SPACE.png */; };
+		19C996511DF969C7009C20D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C996451DF969C7009C20D9 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19C996081DF9086A009C20D9 /* secureKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secureKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C996231DF92AF8009C20D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19C996331DF969C7009C20D9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = secureKeyboard/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		19C996341DF969C7009C20D9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = secureKeyboard/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		19C996351DF969C7009C20D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = secureKeyboard/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		19C996381DF969C7009C20D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19C9963A1DF969C7009C20D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		19C9963B1DF969C7009C20D9 /* DELETE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DELETE.png; path = secureKeyboard/DELETE.png; sourceTree = SOURCE_ROOT; };
+		19C9963C1DF969C7009C20D9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = secureKeyboard/Info.plist; sourceTree = SOURCE_ROOT; };
+		19C9963D1DF969C7009C20D9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = secureKeyboard/main.m; sourceTree = SOURCE_ROOT; };
+		19C9963E1DF969C7009C20D9 /* SecureKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecureKeyBoardView.h; path = secureKeyboard/SecureKeyBoardView.h; sourceTree = SOURCE_ROOT; };
+		19C9963F1DF969C7009C20D9 /* SecureKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecureKeyBoardView.m; path = secureKeyboard/SecureKeyBoardView.m; sourceTree = SOURCE_ROOT; };
+		19C996401DF969C7009C20D9 /* SingleKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SingleKey.h; path = secureKeyboard/SingleKey.h; sourceTree = SOURCE_ROOT; };
+		19C996411DF969C7009C20D9 /* SingleKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SingleKey.m; path = secureKeyboard/SingleKey.m; sourceTree = SOURCE_ROOT; };
+		19C996421DF969C7009C20D9 /* SingleKey.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SingleKey.xib; path = secureKeyboard/SingleKey.xib; sourceTree = SOURCE_ROOT; };
+		19C996431DF969C7009C20D9 /* SPACE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SPACE.png; path = secureKeyboard/SPACE.png; sourceTree = SOURCE_ROOT; };
+		19C996441DF969C7009C20D9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = secureKeyboard/ViewController.h; sourceTree = SOURCE_ROOT; };
+		19C996451DF969C7009C20D9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = secureKeyboard/ViewController.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19C996051DF90869009C20D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C996241DF92AF8009C20D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C995FF1DF90869009C20D9 = {
+			isa = PBXGroup;
+			children = (
+				19C9960A1DF9086A009C20D9 /* secureKeyboard */,
+				19C996091DF9086A009C20D9 /* Products */,
+				19C996221DF92AF8009C20D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19C996091DF9086A009C20D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19C996081DF9086A009C20D9 /* secureKeyboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19C9960A1DF9086A009C20D9 /* secureKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				19C996331DF969C7009C20D9 /* AppDelegate.h */,
+				19C996341DF969C7009C20D9 /* AppDelegate.m */,
+				19C996351DF969C7009C20D9 /* Assets.xcassets */,
+				19C996361DF969C7009C20D9 /* Base.lproj */,
+				19C9963B1DF969C7009C20D9 /* DELETE.png */,
+				19C9963C1DF969C7009C20D9 /* Info.plist */,
+				19C9963D1DF969C7009C20D9 /* main.m */,
+				19C9963E1DF969C7009C20D9 /* SecureKeyBoardView.h */,
+				19C9963F1DF969C7009C20D9 /* SecureKeyBoardView.m */,
+				19C996401DF969C7009C20D9 /* SingleKey.h */,
+				19C996411DF969C7009C20D9 /* SingleKey.m */,
+				19C996421DF969C7009C20D9 /* SingleKey.xib */,
+				19C996431DF969C7009C20D9 /* SPACE.png */,
+				19C996441DF969C7009C20D9 /* ViewController.h */,
+				19C996451DF969C7009C20D9 /* ViewController.m */,
+			);
+			name = secureKeyboard;
+			path = safeKeyboard;
+			sourceTree = "<group>";
+		};
+		19C996221DF92AF8009C20D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19C996231DF92AF8009C20D9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19C996361DF969C7009C20D9 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				19C996371DF969C7009C20D9 /* LaunchScreen.storyboard */,
+				19C996391DF969C7009C20D9 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = secureKeyboard/Base.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19C996071DF90869009C20D9 /* secureKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19C9961F1DF9086A009C20D9 /* Build configuration list for PBXNativeTarget "secureKeyboard" */;
+			buildPhases = (
+				19C996041DF90869009C20D9 /* Sources */,
+				19C996051DF90869009C20D9 /* Frameworks */,
+				19C996061DF90869009C20D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = secureKeyboard;
+			productName = safeKeyboard;
+			productReference = 19C996081DF9086A009C20D9 /* secureKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19C996001DF90869009C20D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = iOS000;
+				TargetAttributes = {
+					19C996071DF90869009C20D9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = CNAQALPHD6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 19C996031DF90869009C20D9 /* Build configuration list for PBXProject "secureKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19C995FF1DF90869009C20D9;
+			productRefGroup = 19C996091DF9086A009C20D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19C996071DF90869009C20D9 /* secureKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19C996061DF90869009C20D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C9964A1DF969C7009C20D9 /* DELETE.png in Resources */,
+				19C996491DF969C7009C20D9 /* Main.storyboard in Resources */,
+				19C996471DF969C7009C20D9 /* Assets.xcassets in Resources */,
+				19C9964F1DF969C7009C20D9 /* SingleKey.xib in Resources */,
+				19C996501DF969C7009C20D9 /* SPACE.png in Resources */,
+				19C9964B1DF969C7009C20D9 /* Info.plist in Resources */,
+				19C996481DF969C7009C20D9 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19C996041DF90869009C20D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C9964C1DF969C7009C20D9 /* main.m in Sources */,
+				19C9964E1DF969C7009C20D9 /* SingleKey.m in Sources */,
+				19C996461DF969C7009C20D9 /* AppDelegate.m in Sources */,
+				19C9964D1DF969C7009C20D9 /* SecureKeyBoardView.m in Sources */,
+				19C996511DF969C7009C20D9 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19C996371DF969C7009C20D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19C996381DF969C7009C20D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		19C996391DF969C7009C20D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19C9963A1DF969C7009C20D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19C9961D1DF9086A009C20D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19C9961E1DF9086A009C20D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19C996201DF9086A009C20D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CNAQALPHD6;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = safeKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jing.secureKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19C996211DF9086A009C20D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CNAQALPHD6;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = safeKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jing.secureKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19C996031DF90869009C20D9 /* Build configuration list for PBXProject "secureKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C9961D1DF9086A009C20D9 /* Debug */,
+				19C9961E1DF9086A009C20D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19C9961F1DF9086A009C20D9 /* Build configuration list for PBXNativeTarget "secureKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19C996201DF9086A009C20D9 /* Debug */,
+				19C996211DF9086A009C20D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19C996001DF90869009C20D9 /* Project object */;
+}

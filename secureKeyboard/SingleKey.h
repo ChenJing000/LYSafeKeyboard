@@ -1,6 +1,6 @@
 //
-//  LYKey.h
-//  LYSafeKeyboard
+//  SingleKey.h
+//  SecureKeyboard
 //
 //  Created by Mr Li on 16/10/21.
 //  Copyright © 2016年 Mr_Li. All rights reserved.
@@ -10,7 +10,7 @@
 /**
  *  键
  */
-@interface LYKey : UICollectionViewCell
+@interface SingleKey : UICollectionViewCell
 /**
  *  键上的数字
  */
