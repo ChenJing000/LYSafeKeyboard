@@ -14,6 +14,6 @@
 /**
  *  键上的数字
  */
-@property (nonatomic, strong) NSString        * title;
+@property (nonatomic, strong) NSString * title;
 
 @end

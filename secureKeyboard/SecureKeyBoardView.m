@@ -13,11 +13,11 @@
 #define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
 //屏幕高度
 #define SCREEN_HEIGHT       [UIScreen mainScreen].bounds.size.height
-//键盘的高度（确认了自带的数字键盘高度  只有6sp的键盘高度为226 其他为216）
+//键盘的高度（确认了自带的数字键盘高度  只有6S plus的键盘高度为226 其他为216）
 #define KEYBOARD_HEIGHT     (SCREEN_WIDTH == 736 ? 226 : 216)
-//键的高度
+//键（行）的高度  一共4行
 #define KEY_HEIGHT          KEYBOARD_HEIGHT / 4.0f
-//键的宽度
+//键的宽度  每行3个键
 #define KEY_WIDTH           SCREEN_WIDTH / 3.0f
 
 @interface SecureKeyboardView ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
@@ -44,15 +44,12 @@
     static SecureKeyboardView * keyBoard = nil;
     static dispatch_once_t pre;
     dispatch_once(&pre, ^{
-        
         keyBoard = [[SecureKeyboardView alloc]init];
-        
     });
     return keyBoard;
 }
 #pragma mark - 显示键盘
 - (void)showKeyboard{
-    
     [self addSubview:self.collectionView];
     self.frame = CGRectMake(0, SCREEN_HEIGHT - KEYBOARD_HEIGHT, SCREEN_WIDTH, KEYBOARD_HEIGHT);
 }
@@ -82,8 +79,7 @@
         NSMutableArray * initArr = [NSMutableArray arrayWithArray:@[@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9"]];
         _dataArr = [[NSMutableArray alloc] initWithCapacity:0];
         
-        for (NSInteger i = 0; i < 10; i++) {
-            
+        for (NSInteger i = 0; i < 10; i++) { // 随机化
             NSInteger randNum = arc4random() % initArr.count;
             _dataArr[i] = initArr[randNum];
             initArr[randNum] = [initArr lastObject];
@@ -97,7 +93,6 @@
 
 #pragma mark - UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    
     return self.dataArr.count;
 }
 
@@ -108,11 +103,8 @@
     if (self.dataArr.count > 0) {
         
         if (indexPath.row == 9 || indexPath.row == 11) {
-            
             [key.contentView addSubview:[self getImageViewWithImageName:self.dataArr[indexPath.row]]];
-            
         }else{
-            
             key.title = self.dataArr[indexPath.row];
         }
     }
@@ -127,11 +119,9 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 9) {
-        
         return;
     }
     if (self.clickKeyBlock) {
-        
         self.clickKeyBlock(self.dataArr[indexPath.row]);
     }
 }

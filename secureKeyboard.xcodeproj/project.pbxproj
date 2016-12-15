@@ -315,7 +315,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CNAQALPHD6;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = safeKeyboard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/secureKeyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jing.secureKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CNAQALPHD6;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = safeKeyboard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/secureKeyboard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jing.secureKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
